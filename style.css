@@ -1,0 +1,89 @@
+/* Based on your design spec */
+:root {
+  --primary-bg: #1f1f1f;
+  --secondary-bg: #2a2a2a;
+  --primary-text: #f0f0f0;
+  --accent-gold: #e6b800;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- Nav Bar --- */
+.nav-bar {
+  display: flex;
+  flex-shrink: 0;
+  border-bottom: 2px solid var(--accent-gold);
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  color: var(--primary-text);
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.nav-button.active,
+.nav-button:hover {
+  opacity: 1;
+  background-color: var(--secondary-bg);
+}
+
+/* --- Content Area --- */
+.content-area {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding-top: 1rem;
+}
+
+/* --- Pack Tab --- */
+.item-list-header,
+.item-row {
+  display: grid;
+  grid-template-columns: 3fr 2fr 1fr 1fr;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+.item-list-header {
+  font-weight: bold;
+  border-bottom: 1px solid var(--secondary-bg);
+}
+
+.item-row {
+  background-color: var(--secondary-bg);
+}
+
+.item-notes-row {
+  background-color: var(--secondary-bg);
+  padding: 0.5rem 1rem 1rem 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.empty-list {
+  padding: 2rem;
+  text-align: center;
+  opacity: 0.7;
+}
