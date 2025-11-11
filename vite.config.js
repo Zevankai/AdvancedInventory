@@ -1,13 +1,13 @@
 // vite.config.js
 import { defineConfig } from 'vite';
-import basicSsl from '@vitejs/plugin-basic-ssl'; // <-- 1. Import the new plugin
+import basicSsl from '@vitejs/plugin-basic-ssl';
 
 export default defineConfig({
+  base: "/AdvancedInventory/", // <-- ADD THIS LINE
   server: {
     cors: {
       origin: "https://www.owlbear.rodeo",
     },
-    // https: true, // <-- 2. We don't need this line anymore
   },
-  plugins: [ basicSsl() ], // <-- 3. Add this plugins array
+  plugins: [ basicSsl() ],
 });
