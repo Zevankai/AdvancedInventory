@@ -4,8 +4,9 @@
   "description": "An advanced slot-based inventory, pack, and currency extension for Owlbear Rodeo.",
   "main": "main.js",
   "scripts": {
-    "dev": "vite"
-    "build": "vite build"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "keywords": [],
   "author": "",
