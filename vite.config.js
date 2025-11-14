@@ -1,7 +1,6 @@
 // vite.config.js
 import { defineConfig } from 'vite';
-import basicSsl from '@vitejs/plugin-basic-ssl';
-
+// removed @vitejs/plugin-basic-ssl because it's only for local HTTPS and causes a peer dependency mismatch on Vercel
 export default defineConfig({
   base: "/AdvancedInventory/",
   server: {
@@ -9,5 +8,5 @@ export default defineConfig({
       origin: "https://www.owlbear.rodeo",
     },
   },
-  plugins: [ basicSsl() ],
+  // no plugins required for production build
 });
