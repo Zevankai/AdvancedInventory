@@ -1,14 +1,1 @@
-{
-  "name": "advancedinventory",
-  "version": "1.0.0",
-  "description": "An advanced slot-based inventory, pack, and currency extension for Owlbear Rodeo.",
-  "main": "main.js",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
-}
+{"name":"advancedinventory","version":"1.0.0","description":"An advanced slot-based inventory, pack, and currency extension for Owlbear Rodeo.","main":"main.js","scripts":{"dev":"vite","build":"vite build","preview":"vite preview"},"devDependencies":{"vite":"^5.0.0"},"keywords":[],"author":"","license":"ISC"}
